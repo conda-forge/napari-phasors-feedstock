@@ -1,4 +1,4 @@
-{% set version = "0.7.3" %}
+{% set version = "0.8.0" %}
 {% set python_min = "3.12" %}
 
 package:
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/n/napari-phasors/napari_phasors-{{ version }}.tar.gz
-  sha256: 24c739fc95b9c6eb536adb761da82b9ff8e22a4fec4d7775858487d5572dff59
+  sha256: 4a6ca8307cfd6e68319344362d35f263f59bd270a382beacddcf1b49bed10ca8
 
 build:
   noarch: python
@@ -23,7 +23,7 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - phasorpy >=0.10
+    - phasorpy >=0.12
     - qtpy
     - pyqt6
     - fbdfile
@@ -35,6 +35,7 @@ requirements:
     - scipy
     - czifile
     - lfdfiles
+    - brighteyes-mcs-reader >=0.1.0
 
 test:
   commands:
