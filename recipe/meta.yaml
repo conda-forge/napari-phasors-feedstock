@@ -1,4 +1,4 @@
-{% set version = "0.8.0" %}
+{% set version = "0.8.1" %}
 {% set python_min = "3.12" %}
 
 package:
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/n/napari-phasors/napari_phasors-{{ version }}.tar.gz
-  sha256: 4a6ca8307cfd6e68319344362d35f263f59bd270a382beacddcf1b49bed10ca8
+  sha256: 92e0973cb9fc05b97a9630b37100a168236c06ef8395fb1db8cd95928da69bef
 
 build:
   noarch: python
