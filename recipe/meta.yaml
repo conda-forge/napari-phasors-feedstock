@@ -23,10 +23,10 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - phasorpy >=0.12
+    - phasorpy >=0.13
     - qtpy
     - pyqt6
-    - fbdfile
+    - fbdfile ==2026.8.30
     - sdtfile
     - ptufile
     - tifffile
