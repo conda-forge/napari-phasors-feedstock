@@ -1,4 +1,4 @@
-{% set version = "0.8.2" %}
+{% set version = "0.9.0" %}
 {% set python_min = "3.12" %}
 
 package:
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/n/napari-phasors/napari_phasors-{{ version }}.tar.gz
-  sha256: a006827c34095d4fe26f91baf156d21b9cc476d79bb469dd5d0fea9ce23e1eb3
+  sha256: 136afa1c83694246bfeb6f0f3ed6ec9e40cc868bfe17c4a6b44c2146e5d59be8
 
 build:
   noarch: python
@@ -23,10 +23,10 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - phasorpy >=0.12
+    - phasorpy >=0.13
     - qtpy
     - pyqt6
-    - fbdfile
+    - fbdfile ==2026.8.30
     - sdtfile
     - ptufile
     - tifffile
